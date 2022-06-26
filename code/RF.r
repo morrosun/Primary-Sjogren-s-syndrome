@@ -7,7 +7,7 @@ library(ggplot2)
 library(Metrics)
 library(ggfortify)
 
-df <- read.csv(file = "~", head = 1, check.names=FALSE, stringsAsFactors = TRUE)
+df <- read.csv(file = "~.csv", head = 1, check.names=FALSE, stringsAsFactors = TRUE)
 column = ncol(df)
 metabolite <- as.matrix(df[,1:(column-1)])
 group <- df[,column]
