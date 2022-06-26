@@ -1,10 +1,10 @@
-setwd("D:/Article/SS/data/")
+setwd("~")
 library(xgboost)
 library(ggplot2)
 library(caret)
 library(pROC)
 library(rBayesianOptimization)
-df <- read.csv(file = "SS2", head = 1, check.names=FALSE, stringsAsFactors = TRUE)
+df <- read.csv(file = "~.csv", head = 1, check.names=FALSE, stringsAsFactors = TRUE)
 column = ncol(df)
 
 #xgboost
