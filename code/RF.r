@@ -67,4 +67,4 @@ roc_rf$sensitivities
 roc_rf$specificities
 #write.table(cbind(pred_test_rf,test_set_group),"rf_ROC_test.csv",row.names=FALSE,col.names=TRUE,sep=",")
 
-important_variables(rf_fit, scale = 1)
+varImp(rf_fit, scale = 1)
